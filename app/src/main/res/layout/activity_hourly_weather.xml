@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradiient_blue"
+    tools:context=".view.activities.HourlyWeatherActivity">
+    <TextView
+        style="@style/textFont"
+        android:id="@+id/tv_minutely_wetaher_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:text="@string/hourly_forescat" />
+
+    <ListView
+        android:id="@+id/lv_hourly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:padding="5dp"
+        android:layout_below="@id/tv_minutely_wetaher_tittle" />
+    <TextView
+    style="@style/textFont"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:id="@+id/tv_message_data_hourly"
+    android:layout_centerInParent="true"
+    android:text="@string/message_sin_datos" />
+
+</RelativeLayout>

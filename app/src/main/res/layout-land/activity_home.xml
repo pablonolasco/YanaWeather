@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradiient_blue"
+    android:orientation="vertical"
+    android:weightSum="1.0"
+    android:baselineAligned="false">
+    <LinearLayout
+        android:id="@+id/ln_logos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight=".2"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            android:weightSum="1.0"
+            android:baselineAligned="false"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|center_vertical"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_clear_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/tv_descirpcion_iv_clear"
+                    app:srcCompat="@drawable/clear_day"
+                    />
+
+                <TextView
+                    style="@style/textFont"
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tx_partly_cloudy_label"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="80dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_current_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_number_grade_label"
+                        style="@style/textFont"
+                        android:textSize="80sp" />
+                    <ImageView
+                        android:id="@+id/iv_grade"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/tv_grados_iv_grade"
+                        app:srcCompat="@drawable/degree" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+                    >
+                    <TextView
+                        android:id="@+id/tv_h_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/h_grados"
+                        style="@style/textFont"
+                        android:padding="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_current_temp" />
+
+                    <TextView
+                        android:id="@+id/tv_l_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/l_grade"
+                        style="@style/textFont"
+                        android:padding="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_current_temp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_barra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight=".8"
+        >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:weightSum="1.0"
+          android:baselineAligned="false"
+          >
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight=".3"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:baselineAligned="false"
+              >
+              <TextView
+                  style="@style/textFont"
+                  android:id="@+id/tv_daily"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/daily"
+                  android:textStyle="bold"
+                  android:textSize="@dimen/text_barra_size" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight=".3"
+              android:gravity="center"
+              android:baselineAligned="false"
+
+              android:orientation="horizontal"
+              >
+              <TextView
+                  style="@style/textFont"
+                  android:id="@+id/tv_hourly"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/hourly"
+                  android:textStyle="bold"
+                  android:textSize="@dimen/text_barra_size" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight=".3"
+              android:gravity="center"
+              android:baselineAligned="false"
+              android:orientation="horizontal"
+              >
+              <TextView
+                  style="@style/textFont"
+                  android:id="@+id/tv_minutely"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/minutely"
+                  android:textStyle="bold"
+                  android:textSize="@dimen/text_barra_size" />
+
+          </LinearLayout>
+
+
+      </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

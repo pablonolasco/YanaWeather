@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@drawable/bg_gradiient_blue"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/tv_hour_hourly_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textFont"
+        tools:text="19:50"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tv_state_hourly_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Probability"
+        style="@style/textFont"
+        />
+
+</LinearLayout>

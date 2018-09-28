@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Yana Weather</string>
+    <string name="tx_partly_cloudy_label">--</string>
+    <string name="tv_descirpcion_iv_clear">Imagen del sol</string>
+    <string name="tv_grados_iv_grade">Grados</string>
+    <string name="tv_number_grade_label">--</string>
+    <string name="h_grados">H:--°</string>
+    <string name="l_grade">L:--°</string>
+    <string name="daily">Daily</string>
+    <string name="hourly">Hourly</string>
+    <string name="minutely">Minutely</string>
+    <string name="dayli_forescat">Daily Forescat</string>
+    <string name="hourly_forescat">Hourly Forecast</string>
+    <string name="minutely_forescat">Minutely Forescat</string>
+    <string name="error_conexion">Error de conexion</string>
+    <string name="message_sin_datos">No hay datos</string>
+    <string name="txt_dialog_btn_acept">Aceptar</string>
+    <string name="txt_dialog_error_title">Atención</string>
+    <string name="txt_dialog_charge">Cargando</string>
+    <string name="txt_dialog_missed_data">Favor de ingresar los siguientes datos o dejar un espacio: </string>
+    <string name="txt_dialog_error_password">Favor de verificar sus datos</string>
+    <string name="txt_dialog_missed_email">Favor de introducir su correo electronico</string>
+    <string name="txt_dialog_email_send">Se envio tu contraseña a tu correo</string>
+</resources>
